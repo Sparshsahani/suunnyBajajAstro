@@ -23,9 +23,18 @@ export default function Energy() {
             </p>
             <p className=" text-xl font-extralight">
               Get Accurate Planetary Degree, 10-year prediction, with all remedies and name correction.
-              Including a 270-pages detailed PDF report.
+              Including a 270-pages detailed All In One PDF Report. 
             </p>
           </div>
+           <div>
+          <button
+            className="relative text-black  mt-8 font-bold text-lg bg-yellow-400 rounded shadow-lg
+              hover:scale-105 hover:shadow-lg hover:shadow-white hover:duration-100 duration-100
+              px-4 py-2"
+          >
+            Consult Now  <span className="line-through "> &#8377;2000</span> / &#8377;1500
+          </button>
+        </div>
         </div>
       </section>
       <Contact/>

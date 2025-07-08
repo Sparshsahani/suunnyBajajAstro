@@ -237,7 +237,7 @@ export default function Contact() {
               hover:scale-105 hover:shadow-lg hover:shadow-white hover:duration-100 duration-100
               px-4 py-2"
           >
-            Create My Kundli Now
+            Create My Kundli Now <span className="line-through "> &#8377;699</span> / &#8377;399
           </button>
         </div>
       </form>
