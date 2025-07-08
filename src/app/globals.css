@@ -1,26 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Moon+Dance&family=Syne:wght@400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
+@import 'swiper/css';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-blue: #071248;
+  --color-white: #fff;
+  --color-yellow: #ffcc28;
+  --font-syne-sans: "Syne", "sans-serif";
+  --font-inter-sans: "Inter", sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+*{
+  @apply scroll-smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-blue text-white;
 }
+
+.swiper-pagination {
+  @apply mt-40 flex justify-center gap-2;
+}
+
+.swiper-pagination-bullet {
+  @apply w-3 h-3 bg-gray-400 rounded-full opacity-70 transition-all;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-yellow opacity-100 scale-110;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  @apply w-10 h-10 text-yellow rounded-full flex items-center justify-center shadow-md;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: red;
+}
+
