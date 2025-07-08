@@ -183,7 +183,7 @@ export default function Contact() {
 
           {/* Kundali Language */}
           <div>
-            <label className="block mb-1 font-semibold">Kundali Language</label>
+            <label className="block mb-1 font-semibold">Kundli Language</label>
             <div className="relative">
               <input
                 type="text"
@@ -198,7 +198,7 @@ export default function Contact() {
 
           {/* WhatsApp Number */}
           <div>
-            <label className="block mb-1 font-semibold">WhatsApp Number</label>
+            <label className="block mb-1 font-semibold w-full">WhatsApp Number</label>
             <div className="relative">
               <input
                 type="number"

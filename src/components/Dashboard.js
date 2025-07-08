@@ -40,7 +40,7 @@ export default function Dashboard() {
                     hover:scale-105 hover:shadow-lg hover:shadow-white hover:duration-100 duration-100
                     px-4 py-2"
               >
-                Connect With Us
+                Consult Now <br /> <span className="text-sm">&#40;Energy Exchange&#41;</span>
               </button>
             </div>
             <div className="relative flex justify-center md:justify-center">

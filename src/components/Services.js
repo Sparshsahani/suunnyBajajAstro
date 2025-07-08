@@ -7,6 +7,11 @@ import Rudraksha from "@/pages/Rudraksha";
 import Crystal from "@/pages/Crystal";
 
 export default function Services() {
+  const handleClick = () => {
+    if (typeof window !== "undefined") {
+      window.open("https://wa.me/919616464666", "_blank");
+    }
+  };
   return (
     <>
       <section id="serviceOffered" className="relative overflow-hidden md:pt-20 lg:pt-16 pt-16 xl:py-8">
@@ -28,11 +33,17 @@ export default function Services() {
               </div>
               <Vedic />
 
-              <div className="text-center pt-10">
-                <button className="w-[10rem] h-[3rem] bg-yellow mx-auto text-blue font-semibold px-5 py-1 rounded duration-200 hover:duration-200 hover:scale-105 hover:shadow-lg shadow-white">
-                  Book Now
-                </button>
-              </div>
+              <div className="text-center py-2">
+              <button
+              onClick={handleClick}
+                className="
+                    relative text-black mt-8 font-bold text-lg bg-yellow-400 rounded shadow-lg
+                    hover:scale-105 hover:shadow-lg hover:shadow-white hover:duration-100 duration-100
+                    px-4 py-2"
+              >
+                Connect With Us
+              </button>
+            </div>
             </div>
           </section>
         </div>

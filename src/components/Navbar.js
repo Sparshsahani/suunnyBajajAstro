@@ -36,7 +36,7 @@ export default function Navbar() {
     { link: "Home", routes: "#home" },
     { link: "About", routes: "#aboutUs" },
     { link: "Services Offered", routes: "#serviceOffered" },
-    { link: "ENERGY EXCHANGE", routes: "#energyExchange" },
+    { link: "Software Generated Kundli", routes: "#energyExchange" },
     { link: "TESTIMONIAL", routes: "#testimonials" },
     { link: "FREQUENTLY ASKED QUESTION", routes: "#frequentlyAskedQuestion" },
   ];
@@ -132,7 +132,7 @@ export default function Navbar() {
                 key={id}
                 href={items.routes}
                 onClick={handlerMenuToggle}
-                className="block text-white border-b-1 py-3 hover:text-yellow-600"
+                className="block text-white border-b-1 py-3 lowercase hover:text-yellow-600"
               >
                 {items.link}
               </Link>
