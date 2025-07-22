@@ -37,8 +37,8 @@ export default function Navbar() {
     { link: "About", routes: "#aboutUs" },
     { link: "Services Offered", routes: "#serviceOffered" },
     { link: "Software Generated Kundli", routes: "#energyExchange" },
-    { link: "TESTIMONIAL", routes: "#testimonials" },
-    { link: "FREQUENTLY ASKED QUESTION", routes: "#frequentlyAskedQuestion" },
+    { link: "Testimonials", routes: "#testimonials" },
+    { link: "Frequently Asked Questions", routes: "#frequentlyAskedQuestion" },
   ];
 
   return (
@@ -94,7 +94,10 @@ export default function Navbar() {
                     </Link>
                   </li>
                 ))}
-                <button onClick={handleClick} className="relative text-black font-bold text-lg bg-yellow-400 rounded shadow-lg hover:-translate-y-0.5 hover:shadow-lg hover:shadow-white hover duration-100 ease-in-out whitespace-nowrap px-4 py-2 ">
+                <button
+                  onClick={handleClick}
+                  className="relative text-black font-bold text-lg bg-yellow rounded shadow-lg hover:-translate-y-0.5 hover:shadow-lg hover:shadow-white hover duration-100 ease-in-out whitespace-nowrap px-4 py-2 "
+                >
                   Connect With Us
                 </button>
               </ul>
@@ -105,7 +108,7 @@ export default function Navbar() {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 className={`transition-transform duration-300 ease-in-out transform ${
-                  isOpen ? "scale-110 text-yellow-400" : "scale-100"
+                  isOpen ? "scale-110 text-yellow" : "scale-100"
                 }`}
               >
                 {isOpen ? (
@@ -132,7 +135,7 @@ export default function Navbar() {
                 key={id}
                 href={items.routes}
                 onClick={handlerMenuToggle}
-                className="block text-white border-b-1 py-3 lowercase hover:text-yellow-600"
+                className="block text-white border-b-1 py-3 normal-case hover:text-yellow"
               >
                 {items.link}
               </Link>
@@ -140,9 +143,14 @@ export default function Navbar() {
             <div className="text-center py-2">
               <button
                 onClick={handleClick}
-                className="bg-yellow-500 mx-auto font-semibold px-5 py-1 rounded"
+                className="bg-yellow mx-auto font-semibold px-5 py-1 rounded flex gap-x-2 justify-center items-center"
               >
                 Connect With Us
+                <Image
+                  src={LogoWhatsApp}
+                  alt="whatsapp_logo"
+                  className="w-[5vh] "
+                />
               </button>
             </div>
           </div>

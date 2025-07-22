@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { GoDotFill } from "react-icons/go";
+import LogoWhatsApp from "../../public/images/whatsapp.png";
 export default function Crystal() {
   const benefites = [
     {
@@ -84,6 +85,12 @@ export default function Crystal() {
     },
   ];
 
+  const handleClick = () => {
+    if (typeof window !== "undefined") {
+      window.open("https://wa.me/919616464666", "_blank");
+    }
+  };
+
   return (
     <>
       <section className="max-sm:my-20 max-lg:my-50 max-sm:mx-5 mx-30">
@@ -94,14 +101,14 @@ export default function Crystal() {
           <h1 className="text-4xl my-10 text-yellow font-syne-sans font-semibold max-sm:text-3xl">
             Natural Crystal
           </h1>
-          <p className="leading-9 text-xl font-extralight">
+          <p className="leading-9 md:text-sm  2xl:text-lg  font-extralight">
             Crystal bracelets aren’t just stylish—they’re like tiny miracle
             workers for your mind, body, and spirit. Slip one on, and you’ll
             instantly feel the magic of the crystal bracelet benefits. For your
             mind, amethyst and clear quartz act like mental espresso shots,
             boosting clarity and focus.
           </p>
-          <p className="leading-9 text-xl font-extralight">
+          <p className="leading-9 md:text-sm  2xl:text-lg  font-extralight">
             Meanwhile, for your body, citrine and carnelian provide energy and
             vitality. Additionally, spiritually, rose quartz and selenite offer
             love and inner peace. By embracing these crystal bracelet benefits,
@@ -112,7 +119,7 @@ export default function Crystal() {
           <h1 className="text-4xl my-10 text-yellow font-syne-sans font-semibold max-sm:text-3xl">
             Healing Crystal
           </h1>
-          <p className="leading-9 text-xl font-extralight">
+          <p className="leading-8 md:text-sm  2xl:text-lg  font-extralight">
             Healing crystals are made into bracelets that are suitable for daily
             use. The benefits of healing crystals are well attained only when
             they are placed close to our body. It is believed that the
@@ -169,11 +176,25 @@ export default function Crystal() {
           </h2>
           <button
             className="
-                    relative text-black font-bold text-lg bg-yellow-400 rounded shadow-lg
-                    hover:scale-105 hover:shadow-lg hover:shadow-white hover:duration-100 duration-100
-                    px-4 py-2"
+                    relative text-yellow mx-auto font-bold text-lg 
+                    px-4 py-2 block"
           >
-            All Crystals Bracelets are available
+            All Crystal Bracelets are Available For More Inquiry
+          </button>
+
+          <button
+            onClick={handleClick}
+            className="
+                    relative text-black font-bold text-lg bg-yellow rounded shadow-lg
+                    hover:scale-105 hover:shadow-lg hover:shadow-white hover:duration-100 duration-100
+                    px-4 py-2 flex items-center mx-auto gap-x-2"
+          >
+            Connect With Us
+            <Image
+              src={LogoWhatsApp}
+              alt="whatsapp_logo"
+              className="w-[5vh] "
+            />
           </button>
         </div>
       </section>

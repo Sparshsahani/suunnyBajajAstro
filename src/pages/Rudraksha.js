@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { GoDotFill } from "react-icons/go";
+import LogoWhatsApp from "../../public/images/whatsapp.png";
 
 export default function Rudraksha() {
   const benefites = [
@@ -131,6 +132,11 @@ export default function Rudraksha() {
       image: "/images/rudraImg/rudra_Mala.png",
     },
   ];
+  const handleClick = () => {
+    if (typeof window !== "undefined") {
+      window.open("https://wa.me/919616464666", "_blank");
+    }
+  }
 
   return (
     <>
@@ -139,7 +145,7 @@ export default function Rudraksha() {
           <h1 className="max-sm:text-3xl my-8 text-yellow font-syne-sans font-semibold text-4xl">
             Natural Rudraksha
           </h1>
-          <div className="font-extralight text-xl leading-9 ">
+          <div className="font-extralight md:text-sm  2xl:text-lg  leading-9 ">
             <p>
               Interestingly, the name &quot;Rudraksha&quot; comes from Sanskrit,
               meaning &quot;tears of Lord Shiva.&quot; Imagine the divine
@@ -211,11 +217,25 @@ export default function Rudraksha() {
             </h2>
             <button
               className="
-                    relative text-black font-bold text-lg bg-yellow-400 rounded shadow-lg
-                    hover:scale-105 hover:shadow-lg hover:shadow-white hover:duration-100 duration-100
-                    px-4 py-2"
+                    relative text-yellow mx-auto font-bold text-lg 
+                    px-4 py-2 block"
             >
-              All Rudraksha are available
+              All Rudraksha are Available For More Inquiry
+            </button>
+
+            <button
+              onClick={handleClick}
+              className="
+                    relative text-black font-bold text-lg bg-yellow rounded shadow-lg
+                    hover:scale-105 hover:shadow-lg hover:shadow-white hover:duration-100 duration-100
+                    px-4 py-2 flex items-center mx-auto gap-x-2"
+            >
+              Connect With Us
+              <Image
+                            src={LogoWhatsApp}
+                            alt="whatsapp_logo"
+                            className="w-[5vh] "
+                          />
             </button>
           </div>
         </div>

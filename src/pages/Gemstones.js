@@ -1,6 +1,7 @@
 "use clinet";
 import Image from "next/image";
 import React from "react";
+import LogoWhatsApp from "../../public/images/whatsapp.png";
 import LogoOne from "../../public/images/certifyLogo1.png";
 import LogoTwo from "../../public/images/certifyLogo2.png";
 import LogoThree from "../../public/images/certifyLogo3.png";
@@ -135,6 +136,11 @@ export default function Gemstones() {
       title: "Customized Jewellery made for You",
     },
   ];
+  const handleClick = () => {
+    if (typeof window !== "undefined") {
+      window.open("https://wa.me/919616464666", "_blank");
+    }
+  };
   return (
     <>
       <section className="my-8 max-sm:mx-5 md:mx-10 lg:mx-30">
@@ -142,7 +148,7 @@ export default function Gemstones() {
           <h1 className="text-yellow font-semibold max-sm:text-3xl md:text-4xl font-syne-sans my-8">
             Natural Gemstones
           </h1>
-          <p className="font-extralight max-sm:text-xl text-xl">
+          <p className="font-extralight md:text-sm  2xl:text-lg ">
             Gemstones are beautiful natural treasures known for their beauty and
             spiritual properties. From radiant rubies to soothing aquamarines,
             these precious stones hold cultural significance. In addition to
@@ -155,16 +161,16 @@ export default function Gemstones() {
           <h1 className="text-yellow font-semibold max-sm:text-3xl max-sm:mt-20 md:text-4xl font-syne-sans my-8">
             Gemstones & You
           </h1>
-          <p className="font-extralight max-sm:text-xl text-xl">
+          <p className="font-extralight md:text-sm  2xl:text-lg ">
             Through Vedic astrological wisdom, we understand that the universe’s
             vibrations link our everyday lives to the planets.
           </p>
-          <p className="font-extralight max-sm:text-xl text-xl">
+          <p className="font-extralight md:text-sm  2xl:text-lg ">
             These planets include the seven visible ones—Sun, Moon, Mars,
             Mercury, Jupiter, Venus, and Saturn—and two invisible forces, Rahu
             and Ketu.
           </p>
-          <p className="font-extralight max-sm:text-xl text-xl">
+          <p className="font-extralight md:text-sm  2xl:text-lg ">
             Gemstones, formed over millennia, share vibrational energies with
             these planets. Acting as conduits for cosmic forces, gemstones hold
             the power to balance planetary influences in your life.
@@ -178,9 +184,9 @@ export default function Gemstones() {
             return (
               <div
                 key={key}
-                className="border rounded-xl md:h-[300px] flex flex-col items-start p-8 gap-4 hover:shadow-md hover:shadow-yellow hover:scale-102 hover:duration-200 duration-200 hover:border-yellow"
+                className="border rounded-xl md:h-[300px] lg:h-[300px] flex flex-col items-start justify-start px-5 gap-4 hover:shadow-md hover:shadow-yellow hover:scale-102 hover:duration-200 duration-200 hover:border-yellow"
               >
-                <div className="mx-auto max-w-20 min-h-[100px] flex flex-col items-center justify-center">
+                <div className="mx-auto">
                   <Image
                     src={items?.imgs}
                     alt="stone_img"
@@ -204,13 +210,28 @@ export default function Gemstones() {
           <h2 className="text-yellow max-sm:text-3xl text-4xl">
             Unlock the Power of Astrology with the Right Gemstone
           </h2>
+
           <button
             className="
-                    relative text-black font-bold text-lg bg-yellow-400 rounded shadow-lg
-                    hover:scale-105 hover:shadow-lg hover:shadow-white hover:duration-100 duration-100
-                    px-4 py-2"
+                    relative text-yellow mx-auto font-bold text-lg 
+                    px-4 py-2 block"
           >
-            All Gemstones are available
+            All Gemstones are Available For More Inquiry
+          </button>
+
+          <button
+            onClick={handleClick}
+            className="
+                    relative text-black font-bold text-lg bg-yellow rounded shadow-lg
+                    hover:scale-105 hover:shadow-lg hover:shadow-white hover:duration-100 duration-100
+                    px-4 py-2 flex items-center mx-auto gap-x-2"
+          >
+            Connect With Us
+            <Image
+              src={LogoWhatsApp}
+              alt="whatsapp_logo"
+              className="w-[5vh] "
+            />
           </button>
         </div>
 

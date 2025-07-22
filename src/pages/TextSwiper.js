@@ -155,7 +155,7 @@ export default function TextSwiper() {
           {slides.map((text, index) => (
             <SwiperSlide key={index}>
               <div className="max-w-4xl mx-auto border rounded-xl p-6 min-h-[200px] flex flex-col justify-center">
-                <p className="text-lg">{text.description}</p>
+                <p className="md:text-sm  2xl:text-lg ">{text.description}</p>
                 <div className="pt-4 font-syne-sans font-bold">
                   <h3 className="text-2xl text-yellow">{text.name}</h3>
                   {/* <h5 className="text-xl text-yellow">{text.review}</h5> */}

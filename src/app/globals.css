@@ -1,16 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Moon+Dance&family=Syne:wght@400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
-@import 'swiper/css';
+@import "swiper/css";
 
 @theme {
   --color-blue: #071248;
   --color-white: #fff;
-  --color-yellow: #ffcc28;
+  --color-yellow: #ffb400;
   --font-syne-sans: "Syne", "sans-serif";
   --font-inter-sans: "Inter", sans-serif;
+  --font-bricolage_grotesque-sans: "Bricolage Grotesque", sans-serif;
+}
+@media (max-width: 1366px) and (max-height: 768px) {
+  .custom-style {
+    font-size: 2rem; /* Tailwind's text-sm = 14px */
+  }
 }
 
-*{
+* {
   @apply scroll-smooth;
 }
 
@@ -41,4 +47,3 @@ body {
   font-weight: bold;
   color: red;
 }
-

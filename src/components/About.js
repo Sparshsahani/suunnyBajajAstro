@@ -13,12 +13,12 @@ export default function About() {
     <>
       <section
         id="aboutUs"
-        className="relative overflow-hidden md:mt-0 xl:pt-20 xl:px-19"
+        className="relative overflow-hidden md:mt-0 lg:mt-0 xl:px-19"
       >
         <div className="max-width-lg px-[24px] md:px-30 lg:px-20 xl:px-10 w-full mt-8">
           <section className="mt-[100px]">
             <div className="flex lg:flex-row flex-col gap-25 items-center gap-y-0">
-              <div className="lg:w-[58%] w-full flex-shrink flex-grow-0 basis-auto m-10">
+              <div className="order-2 max-sm:order-1 lg:w-[58%] w-full flex-shrink flex-grow-0 basis-auto m-10">
                 <div className="about-content-part relative z-2 rmb-55">
                   <div className="max-lg:mb-35 xl:mb-2">
                     <span className="block font-medium mb-8 text-2xl text-white ">
@@ -30,7 +30,7 @@ export default function About() {
                       of the stars and ancient
                       <span className="text-yellow"> Vedic astrology.</span>
                     </h2>
-                    <p className="mt-[25px] leading-8 text-white/70 font-light">
+                    <p className="mt-[25px] md:text-sm  2xl:text-lg  leading-8 text-white/70 font-light">
                       Hello! I’m
                       <span className="text-yellow"> Suunny Bajaj </span>, a
                       passionate astrologer with more than 6 years of experience
@@ -44,7 +44,7 @@ export default function About() {
                   </div>
                 </div>
               </div>
-              <div className="lg:w-[40%] w-full flex-shrink flex-grow-0 basis-auto">
+              <div className="order-1 max-sm:order-2 lg:w-[40%] w-full flex-shrink flex-grow-0 basis-auto">
                 <div className="about-image-part relative ">
                   <Image src={Moon} alt="person" className=" w-110" />
                   <Image src={MoonSpinOne} alt="person" className=" absolute top-0 w-110 animate-[spin_80s_linear_infinite]" />

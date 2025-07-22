@@ -27,7 +27,7 @@ export default function Numerology() {
                       Numerology And Name Correction
                     </h2>
                     <br />
-                    <p className="max-sm:text-xl xl:text-xl font-extralight">
+                    <p className="md:text-base  2xl:text-lg  font-extralight">
                       Decode Your Destiny with our All - Inclusive Personalized
                       Numerology Report. <br />
                       Step into clarity and confidence with our All-in-One
@@ -49,7 +49,7 @@ export default function Numerology() {
                   );
                 })}
               </div>
-              <div className="text-center text-xl xl:mx-30 space-y-8 mt-10">
+              <div className="text-center md:text-base  2xl:text-lg  xl:mx-30 space-y-8 mt-10">
                 <p className="font-extralight">
                   Let your numbers guide you to balance, success, alignment and
                   overall well-being. <br /> Everything you need in one powerful
@@ -60,7 +60,7 @@ export default function Numerology() {
                 <h4 className="text-4xl font-semibold text-yellow font-syne-sans">
                   Advice
                 </h4>
-                <p className="max-sm:text-xl text-xl font-extralight">
+                <p className="md:text-base  2xl:text-lg  font-extralight">
                   A balanced name with powerful vibrations can bring growth,
                   wealth, opportunities, peace, and fame in your life. However,
                   self-medication is harmful like wise you should not change

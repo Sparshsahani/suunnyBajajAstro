@@ -25,15 +25,6 @@ export default function Energy() {
               Get Accurate Planetary Degree, 10-year prediction, Including a 270-pages detailed All In One PDF Report. 
             </p>
           </div>
-           {/* <div>
-          <button
-            className="relative text-black  mt-8 font-bold text-lg bg-yellow-400 rounded shadow-lg
-              hover:scale-105 hover:shadow-lg hover:shadow-white hover:duration-100 duration-100
-              px-4 py-2"
-          >
-            Create Your Kundli Now  <span className="line-through "> &#8377;699</span> / &#8377;399
-          </button>
-        </div> */}
         </div>
       </section>
       <Contact/>

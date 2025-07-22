@@ -55,7 +55,7 @@ export default function Vedic() {
               <h4 className="pb-6 text-3xl font-syne-sans font-semibold tracking-wider">
                 {items?.title}
               </h4>
-              <p className="pb-3 xl:text-base font-extralight">{items?.para}</p>
+              <p className="pb-3 md:text-sm  2xl:text-lg  font-extralight">{items?.para}</p>
             </div>
           );
         })}

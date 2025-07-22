@@ -1,5 +1,5 @@
 import TextSwiper from "@/pages/TextSwiper";
-import React from "react"; 
+import React from "react";
 
 export default function Testemonials() {
   return (
@@ -15,7 +15,7 @@ export default function Testemonials() {
             </h1>
           </div>
           <div className="my-10">
-            <div className="bg-yellow mx-auto max-sm:h-[500px] max-sm:w-[300px] md:w-full lg:h-[150px] rounded-[50px] lg:w-[60%] ">
+            <div className="bg-yellow mx-auto max-sm:h-[500px] max-sm:w-[300px] md:w-full lg:h-[150px] rounded-[50px] lg:w-[80%]">
               <div className="text-black font-semibold flex flex-row justify-center max-sm:gap-y-20 md:gap-x-10 lg:gap-x-30 items-center w-full h-full max-sm:flex-col ">
                 <div>
                   <h3 className="text-center max-sm:text-4xl md:text-3xl lg:text-5xl pb-2">

@@ -68,7 +68,7 @@ export default function Faq() {
               <div className="border border-gray-300 rounded-lg">
                 <button
                   onClick={() => toggle(id)}
-                  className="w-full flex justify-between items-center p-4 font-medium text-lg text-left"
+                  className="w-full flex justify-between items-center p-4 font-medium md:text-sm  2xl:text-lg  text-left"
                 >
                   {items?.name}
                   <span className="ml-4 text-yellow">
@@ -77,7 +77,7 @@ export default function Faq() {
                 </button>
 
                 {openIndex === id && (
-                  <div className="p-4 ">{items?.description}</div>
+                  <div className="p-4 text-yellow">{items?.description}</div>
                 )}
               </div>
             </div>
