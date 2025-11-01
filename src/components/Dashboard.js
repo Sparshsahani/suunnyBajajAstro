@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Person from "../../public/images/personCrop.png";
+import Person from "../../public/images/personCrop.jpg";
 import LogoCircle from "../../public/images/logoCircle.png";
 import QR from "../../public/images/qr.jpg"; // your QR image
 
@@ -41,7 +41,7 @@ export default function Dashboard() {
               </p>
 
               <button
-                className="mt-8 text-black font-bold text-lg bg-yellow rounded px-6 py-3 shadow-lg hover:scale-105 transition-transform duration-200"
+                className="mt-8 text-white font-bold text-lg bg-yellow rounded px-6 py-3 shadow-lg hover:scale-105 transition-transform duration-200"
                 onClick={() => setShowPopup(true)}
               >
                 Connect Now <br />
@@ -63,7 +63,7 @@ export default function Dashboard() {
                 <Image
                   src={Person}
                   alt="person"
-                  className="w-full object-cover rounded-lg rotate-3"
+                  className="w-full object-cover rounded-lg rotate-0"
                 />
               </div>
             </div>
@@ -113,8 +113,8 @@ export default function Dashboard() {
                     </h1>
                   </div>
                   <div className="flex justify-center items-center my-2 text-xl md:text-2xl  ">
-                    <h2 className="bg-yellow rounded-xl p-2 font-extrabold text-2xl text-black uppercase xl:text-base 2xl:text-5xl">
-                      Charges <strong>₹1500</strong>
+                    <h2 className="bg-yellow rounded-xl p-2 font-extrabold text-2xl text-white uppercase xl:text-base 2xl:text-5xl">
+                      Charges <strong>₹1100</strong>
                       <h3 className="lowercase font-semibold text-xl text-center whitespace-nowrap">
                         {" "}
                         (per person)

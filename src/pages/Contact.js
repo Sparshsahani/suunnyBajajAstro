@@ -20,7 +20,7 @@ export default function Contact() {
             {" "}
             &#8377;699
           </span>{" "}
-          / &#8377;399
+          / &#8377;299
         </button>
       </div>
 
@@ -52,7 +52,7 @@ export default function Contact() {
               <div className="flex-1 space-y-4">
                 <h2 className="text-2xl font-semibold ">
                   Discover Your Destiny – Pay{" "}
-                  <span className="text-yellow underline">₹399</span> for Your
+                  <span className="text-yellow underline">₹299</span> for Your
                   Kundli
                 </h2>
 

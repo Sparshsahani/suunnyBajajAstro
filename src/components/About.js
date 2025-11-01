@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import Person from "../../public/images/personCrop.png";
+import Person from "../../public/images/personCrop.jpg";
 import MoonSpinOne from "../../public/images/moon-spine-2.png";
 import MoonSpinTwo from "../../public/images/moon-sign-3.png";
 import Moon from "../../public/images/moon-inverse1.png";

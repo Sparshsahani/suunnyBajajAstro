@@ -38,7 +38,7 @@ export default function Navbar() {
     { link: "Services Offered", routes: "#serviceOffered" },
     { link: "Software Generated Kundli", routes: "#energyExchange" },
     { link: "Testimonials", routes: "#testimonials" },
-    { link: "Frequently Asked Questions", routes: "#frequentlyAskedQuestion" },
+    { link: "FAQ", routes: "#frequentlyAskedQuestion" },
   ];
 
   return (
@@ -61,15 +61,17 @@ export default function Navbar() {
         transition={{ duration: 0.3, ease: "easeInOut" }}
       >
         <div className="container mx-auto">
-          <div className="flex items-center justify-between max-lg:ml-10">
+          <div className="flex items-center justify-between max-lg:ml-3 2xl:mx-20">
             {/* Logo */}
-            <div className="py-1 flex item-center justify-between rounded-full">
+            <div className="py-1 flex item-center justify-between rounded-full 2xl:ml-10">
               <Link href="/">
-                <Image
-                  alt="Logo"
-                  src={LogoCircle}
-                  className="max-sm:w-[50px] max-sm:h-[50px] w-[80px] h-[80px] rounded-full animate-[spin_20s_linear_infinite] "
-                />
+                <h2 className="space-x-2 text-4xl font-imperial_script-sans">
+                  <span className="text-white font-semibold">Astro</span>
+                  <span className="text-yellow font-semibold">Sunny</span>
+                </h2>
+                <h2 className="max-lg:text-[10px] capitalize italic">
+                  one who brings light through astrology
+                </h2>
               </Link>
             </div>
             <div className="lg:hidden">

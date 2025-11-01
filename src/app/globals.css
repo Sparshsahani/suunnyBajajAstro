@@ -9,10 +9,13 @@
   --font-syne-sans: "Syne", "sans-serif";
   --font-inter-sans: "Inter", sans-serif;
   --font-bricolage_grotesque-sans: "Bricolage Grotesque", sans-serif;
+  --font-imperial_script-sans: "Imperial Script", cursive, sans-serif;
 }
+
 @media (max-width: 1366px) and (max-height: 768px) {
   .custom-style {
-    font-size: 2rem; /* Tailwind's text-sm = 14px */
+    font-size: 2rem;
+    /* Tailwind's text-sm = 14px */
   }
 }
 
